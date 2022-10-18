@@ -6,8 +6,8 @@ const Layout = ({ children }) => {
 
   return (
     <div className="bg-slate-100 h-screen">
-      <div className="flex items-center px-3 justify-between bg-[#558b2f] h-16 ">
-        <h1 className="text-2xl">Maqsat Logo</h1>
+      <div className="flex items-center px-3 justify-between bg-[#558b2f] h-20 md:h-40 md:items-start md:py-6 md:px-6">
+        <img src="./assets/logo3.png" alt="Logo Maqsat" className="w-52" />
         <button
           className={`${
             sidebar ? `opacity-0` : `opacity-100`
@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
         <aside
           className={`${
             sidebar ? `-translate-x-0` : `-translate-x-full`
-          }  transition-transform ease-in-out duration-300 z-10 absolute top-0 bg-white border-slate-400 border-r-2 w-80 h-screen md:relative md:-translate-x-0 md:h-[600px] md:w-60 md:rounded-tr-2xl md:rounded-br-2xl md:mt-5 md:border-r-0 md:shadow-md md:shadow-slate-300`}
+          }  transition-transform ease-in-out duration-300 z-10 absolute top-0 bg-white border-slate-400 border-r-2 w-80 h-screen md:relative md:-translate-x-0 md:h-[600px] md:w-[290px] md:rounded-tr-2xl md:rounded-br-2xl md:mt-5 md:border-r-0 md:shadow-md md:shadow-slate-300 md:-translate-y-20`}
         >
           <Sidebar setSidebar={setSidebar} />
         </aside>
