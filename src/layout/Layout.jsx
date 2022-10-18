@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
   return (
     <div className="bg-slate-100 h-screen">
       <div className="flex items-center px-3 justify-between bg-[#558b2f] h-20 md:h-40 md:items-start md:py-6 md:px-6">
-        <img src="./assets/logo3.png" alt="Logo Maqsat" className="w-52" />
+        <img src="./assets/logo.png" alt="Logo Maqsat" className="w-52" />
         <button
           className={`${
             sidebar ? `opacity-0` : `opacity-100`
