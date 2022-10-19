@@ -27,15 +27,15 @@ const Sidebar = ({ setSidebar }) => {
       </div>
       <hr className=" h-px w-[90%] mx-auto bg-black" />
       <div className="px-4 mt-5">
-        <Link to="/">
-          <h1 className="flex gap-3 items-center text-white font-semibold mb-4 bg-[#558b2f] px-4 py-3 rounded-lg shadow-lg shadow-green-900 md:text-lg md:py-2">
+        <Link to="/" onClick={() => setSidebar(false)}>
+          <h1 className="flex gap-3 items-center text-white text-xl font-semibold mb-4 bg-[#558b2f] px-4 py-3 rounded-lg shadow-lg shadow-green-900 md:text-lg md:py-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-5 h-5"
+              className="w-6 h-6"
             >
               <path
                 strokeLinecap="round"
@@ -46,7 +46,7 @@ const Sidebar = ({ setSidebar }) => {
             Dashboard
           </h1>
         </Link>
-        <Link to="/conductores">
+        <Link to="/conductores" onClick={() => setSidebar(false)}>
           <h1 className="flex gap-3 items-center text-xl text-white font-semibold mb-4 bg-[#558b2f] px-4 py-3 rounded-lg shadow-lg shadow-green-900 md:text-lg md:py-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +103,7 @@ const Sidebar = ({ setSidebar }) => {
           </svg>
         </button>
         <ul>
-          <Link to="/grupos">
+          <Link to="/grupos" onClick={() => setSidebar(false)}>
             <li
               className={` ${
                 desplegarLista ? `` : `-translate-y-10 opacity-0 `
@@ -126,7 +126,7 @@ const Sidebar = ({ setSidebar }) => {
               Grupos
             </li>
           </Link>
-          <Link to="/tareas">
+          <Link to="/tareas" onClick={() => setSidebar(false)}>
             <li
               className={` ${
                 desplegarLista ? `` : `-translate-y-20 opacity-0 `
@@ -150,7 +150,7 @@ const Sidebar = ({ setSidebar }) => {
               <a>Tareas</a>
             </li>
           </Link>
-          <Link to="/listas">
+          <Link to="/listas" onClick={() => setSidebar(false)}>
             <li
               className={` ${
                 desplegarLista ? `` : `-translate-y-32 opacity-0 `
