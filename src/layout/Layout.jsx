@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
         >
           <Sidebar setSidebar={setSidebar} />
         </aside>
-        <main className="mx-4 mt-5">{children}</main>
+        <main className="mx-4 mt-5 w-full">{children}</main>
       </div>
     </div>
   );

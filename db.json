@@ -1,0 +1,69 @@
+{
+  "conductor": [
+    { "id": 1, "nombre": "Leandro Valli" },
+    { "id": 2, "nombre": "Alvaro Ivanco" },
+    { "id": 3, "nombre": "Pablo Suarez" },
+    { "id": 4, "nombre": "Rober Montero" },
+    { "id": 5, "nombre": "Carlos Subotin" },
+    { "id": 6, "nombre": "Hugo Nieto" },
+    { "id": 7, "nombre": "Isidoro Larrosa" },
+    { "id": 8, "nombre": "Alejandro Zapata" }
+  ],
+  "unidad": [
+    { "id": 1, "nombre": "JTP-2158" },
+    { "id": 2, "nombre": "JTP-1234" },
+    { "id": 3, "nombre": "JTP-4675" },
+    { "id": 4, "nombre": "JTP-1357" },
+    { "id": 5, "nombre": "JTP-4468" },
+    { "id": 6, "nombre": "JTP-5133" },
+    { "id": 7, "nombre": "JTP-7842" },
+    { "id": 8, "nombre": "JTP-1231" }
+  ],
+  "lista": [
+    {
+      "id": 1,
+      "nombre": "Llegada semiremolque",
+      "listas": [
+        "Revisar perdida de aire",
+        "Estado de Frente seguridad (chivo)",
+        "Estado de grampas, elastico y bejigas"
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Llegada tractor",
+      "listas": [
+        "Revisar perdida de aire",
+        "Estado de Frente seguridad (chivo)",
+        "Estado de grampas, elastico y bejigas"
+      ]
+    },
+    {
+      "id": 3,
+      "nombre": "Salida bitren",
+      "listas": [
+        "Revisar perdida de aire",
+        "Estado de Frente seguridad (chivo)",
+        "Estado de grampas, elastico y bejigas"
+      ]
+    },
+    {
+      "id": 4,
+      "nombre": "Salida semiremolque",
+      "listas": [
+        "Revisar perdida de aire",
+        "Estado de Frente seguridad (chivo)",
+        "Estado de grampas, elastico y bejigas"
+      ]
+    },
+    {
+      "id": 5,
+      "nombre": "Salida tractor",
+      "listas": [
+        "Revisar perdida de aire",
+        "Estado de Frente seguridad (chivo)",
+        "Estado de grampas, elastico y bejigas"
+      ]
+    }
+  ]
+}
