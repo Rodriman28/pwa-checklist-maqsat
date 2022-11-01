@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { getConductores } from "../api/conductor.js";
 import { getUnidades } from "../api/unidad.js";
-import { getListas } from "../api/lista.js";
+import { getListas, getListaId } from "../api/lista.js";
 import ListaForm from "./ListaForm.jsx";
+import Error from "./Error.jsx";
 
 const InicioChofer = () => {
   const [confirmado, setConfirmado] = useState(false);
@@ -10,6 +11,8 @@ const InicioChofer = () => {
   const [unidades, setUnidades] = useState([]);
   const [listas, setListas] = useState([]);
   const [listaSeleccionada, setListaSeleccionada] = useState("");
+  const [error, setError] = useState(false);
+  const [lista, setLista] = useState({});
 
   useEffect(() => {
     const obtenerDatos = async () => {
@@ -35,18 +38,32 @@ const InicioChofer = () => {
     obtenerDatos();
   }, []);
 
+  useEffect(() => {
+    const getLista = async () => {
+      const listaId = await getListaId(listaSeleccionada);
+      setLista(listaId);
+    };
+    getLista();
+  }, [listaSeleccionada]);
+
   const confirmarSeleccion = (e) => {
     e.preventDefault();
-    if (confirmado) {
-      console.log("Cambiar seleccion");
+    if (listaSeleccionada === "") {
+      setError(true);
     } else {
       setConfirmado(true);
+      setError(false);
     }
   };
 
   return (
     <div className="flex flex-col">
       <div className="w-full bg-white rounded-md h-full border-slate-300 shadow-md p-5">
+        {error && (
+          <Error>
+            <p>La lista no puede estar vacía</p>
+          </Error>
+        )}
         <form onSubmit={confirmarSeleccion}>
           <div className="mb-3 flex flex-col">
             <label htmlFor="conductor" className="px-3 py-2 text-lg">
@@ -94,6 +111,7 @@ const InicioChofer = () => {
               className="px-3 py-2 rounded-md bg-slate-200"
               name="lista"
               id="lista"
+              onChange={(e) => setListaSeleccionada(e.target.value)}
             >
               <option value="" disabled selected>
                 -- Seleccionar --
@@ -106,7 +124,7 @@ const InicioChofer = () => {
               s
             </select>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center ">
             <input
               className={`mt-3 text-center text-white ${
                 confirmado ? "bg-orange-400" : "bg-[#558b2f]"
@@ -117,7 +135,7 @@ const InicioChofer = () => {
           </div>
         </form>
       </div>
-      {confirmado && <ListaForm />}
+      {confirmado && <ListaForm lista={lista} />}
     </div>
   );
 };

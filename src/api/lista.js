@@ -5,4 +5,11 @@ const getListas = async () => {
   return listas.data;
 };
 
-export { getListas };
+const getListaId = async (id) => {
+  const listaId = await axios(
+    `${process.env.REACT_APP_SERVER_URL}/lista/${id}`
+  );
+  return listaId.data;
+};
+
+export { getListas, getListaId };

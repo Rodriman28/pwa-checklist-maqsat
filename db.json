@@ -24,7 +24,7 @@
       "id": 1,
       "nombre": "Llegada semiremolque",
       "listas": [
-        "Revisar perdida de aire",
+        "Revisar perdida de aire semiremolque",
         "Estado de Frente seguridad (chivo)",
         "Estado de grampas, elastico y bejigas"
       ]
@@ -33,7 +33,7 @@
       "id": 2,
       "nombre": "Llegada tractor",
       "listas": [
-        "Revisar perdida de aire",
+        "Revisar perdida de aire tractor",
         "Estado de Frente seguridad (chivo)",
         "Estado de grampas, elastico y bejigas"
       ]
@@ -42,7 +42,7 @@
       "id": 3,
       "nombre": "Salida bitren",
       "listas": [
-        "Revisar perdida de aire",
+        "Revisar perdida de aire bitren",
         "Estado de Frente seguridad (chivo)",
         "Estado de grampas, elastico y bejigas"
       ]
@@ -51,7 +51,7 @@
       "id": 4,
       "nombre": "Salida semiremolque",
       "listas": [
-        "Revisar perdida de aire",
+        "Revisar perdida de aire salida semi",
         "Estado de Frente seguridad (chivo)",
         "Estado de grampas, elastico y bejigas"
       ]
