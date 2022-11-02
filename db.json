@@ -24,45 +24,105 @@
       "id": 1,
       "nombre": "Llegada semiremolque",
       "listas": [
-        "Revisar perdida de aire semiremolque",
-        "Estado de Frente seguridad (chivo)",
-        "Estado de grampas, elastico y bejigas"
+        {
+          "id": 1,
+          "nombre": "Revisar perdida de aire semiremolque",
+          "imagen": ""
+        },
+        {
+          "id": 2,
+          "nombre": "Estado de Frente seguridad (chivo)",
+          "imagen": ""
+        },
+        {
+          "id": 3,
+          "nombre": "Estado de grampas, elastico y bejigas",
+          "imagen": ""
+        }
       ]
     },
     {
       "id": 2,
       "nombre": "Llegada tractor",
       "listas": [
-        "Revisar perdida de aire tractor",
-        "Estado de Frente seguridad (chivo)",
-        "Estado de grampas, elastico y bejigas"
+        {
+          "id": 1,
+          "nombre": "Revisar perdida de aire semiremolque",
+          "imagen": ""
+        },
+        {
+          "id": 2,
+          "nombre": "Estado de Frente seguridad (chivo)",
+          "imagen": ""
+        },
+        {
+          "id": 3,
+          "nombre": "Estado de grampas, elastico y bejigas",
+          "imagen": ""
+        }
       ]
     },
     {
       "id": 3,
       "nombre": "Salida bitren",
       "listas": [
-        "Revisar perdida de aire bitren",
-        "Estado de Frente seguridad (chivo)",
-        "Estado de grampas, elastico y bejigas"
+        {
+          "id": 1,
+          "nombre": "Revisar perdida de aire semiremolque",
+          "imagen": ""
+        },
+        {
+          "id": 2,
+          "nombre": "Estado de Frente seguridad (chivo)",
+          "imagen": ""
+        },
+        {
+          "id": 3,
+          "nombre": "Estado de grampas, elastico y bejigas",
+          "imagen": ""
+        }
       ]
     },
     {
       "id": 4,
       "nombre": "Salida semiremolque",
       "listas": [
-        "Revisar perdida de aire salida semi",
-        "Estado de Frente seguridad (chivo)",
-        "Estado de grampas, elastico y bejigas"
+        {
+          "id": 1,
+          "nombre": "Revisar perdida de aire semiremolque",
+          "imagen": ""
+        },
+        {
+          "id": 2,
+          "nombre": "Estado de Frente seguridad (chivo)",
+          "imagen": ""
+        },
+        {
+          "id": 3,
+          "nombre": "Estado de grampas, elastico y bejigas",
+          "imagen": ""
+        }
       ]
     },
     {
       "id": 5,
       "nombre": "Salida tractor",
       "listas": [
-        "Revisar perdida de aire",
-        "Estado de Frente seguridad (chivo)",
-        "Estado de grampas, elastico y bejigas"
+        {
+          "id": 1,
+          "nombre": "Revisar perdida de aire semiremolque",
+          "imagen": ""
+        },
+        {
+          "id": 2,
+          "nombre": "Estado de Frente seguridad (chivo)",
+          "imagen": ""
+        },
+        {
+          "id": 3,
+          "nombre": "Estado de grampas, elastico y bejigas",
+          "imagen": ""
+        }
       ]
     }
   ]
