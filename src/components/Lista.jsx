@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 
-const Lista = ({ lista }) => {
+const Lista = ({ lista, setNuevaLista }) => {
   const [file, setFile] = useState("");
 
   const inputRef = useRef(null);
@@ -16,6 +16,11 @@ const Lista = ({ lista }) => {
       setFile("");
     }
   };
+
+  const agregarTarea = (e) => {
+    console.log("agregando tarea");
+  };
+
   return (
     <div>
       <p className="py-3 text-lg font-semibold">{lista.nombre}</p>
@@ -50,7 +55,7 @@ const Lista = ({ lista }) => {
         ></textarea>
       </div>
       <div className="py-3 flex gap-5 justify-center border-2 shadow-md rounded-md bg-[#558b2f] text-white font-semibold">
-        <label htmlFor="adjunto">Adjuntar foto</label>
+        <label htmlFor={`adjunto${lista.id}`}>Adjuntar foto</label>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -74,7 +79,7 @@ const Lista = ({ lista }) => {
           ref={inputRef}
           accept="image/png, image/jpeg, image/jpg"
           type="file"
-          id="adjunto"
+          id={`adjunto${lista.id}`}
           className="hidden"
           onChange={handleFile}
         />

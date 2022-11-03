@@ -11,6 +11,8 @@ const InicioChofer = () => {
   const [unidades, setUnidades] = useState([]);
   const [listas, setListas] = useState([]);
   const [listaSeleccionada, setListaSeleccionada] = useState("");
+  const [unidadSeleccionada, setUnidadSeleccionada] = useState("");
+  const [conductorSeleccionado, setConductorSeleccionado] = useState("");
   const [error, setError] = useState(false);
   const [lista, setLista] = useState({});
 
@@ -48,7 +50,11 @@ const InicioChofer = () => {
 
   const confirmarSeleccion = (e) => {
     e.preventDefault();
-    if (listaSeleccionada === "") {
+    if (
+      listaSeleccionada === "" ||
+      conductorSeleccionado === "" ||
+      unidadSeleccionada === ""
+    ) {
       setError(true);
     } else {
       setConfirmado(true);
